@@ -1,0 +1,11 @@
+package com.reporting.portal.dto;
+
+import java.time.Instant;
+
+public record ErrorResponse(
+        Instant timestamp,
+        int status,
+        String error,
+        String message
+) {
+}
